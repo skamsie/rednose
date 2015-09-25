@@ -192,11 +192,11 @@ class RedNose(nose.plugins.Plugin):
         """Get time taken result color."""
         time_taken_ms = time_taken * 1000
         if time_taken_ms <= self.timer_ok:
-            color = 'white'
+            color = 'green'
         elif time_taken_ms <= self.timer_warning:
-            color = 'yellow'
+            color = 'green'
         else:
-            color = 'red'
+            color = 'white'
 
         return color
 
